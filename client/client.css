@@ -1,0 +1,1269 @@
+
+
+.navigation-primary__icon--cart_count {
+    background-color: #000000;
+    border-radius: 1.5rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    position: absolute;
+    right: 0.8rem;
+    text-align: center;
+    top: 0.8rem;
+    width: 1.5rem;
+}
+
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+footer {
+    background-color: #999999;
+    height: 10vh;
+    border-top: black 1px solid;
+}
+
+#bigwindow {
+    padding: 0;
+}
+
+#Rubrik {
+    font-family: "Netz";
+    font-size: larger;
+    text-align: center;
+
+
+}
+
+#Rubrik button {
+    text-align: left;
+    font-size: medium;
+}
+
+#myFilter{
+    width: 200px;
+    margin: 0;
+}
+
+.ProductMenu {
+    grid-template-rows: 1/2;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    visibility: hidden;
+    /* background-color: blanchedalmond; */
+}
+
+.form-check {
+    margin-left: 0;
+    text-align: left;
+    font-size: small;
+}
+
+.ProductGrid {
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    /* border-left: 2px solid #000000; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+.card {
+    display: flex;
+    box-shadow: 0;
+    max-width: 300px;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    border: 0cm; 
+    border-radius: 15px;
+}
+
+.productCardHeight {
+    height: 460px;
+}
+
+
+p.productprice {
+    font-size: x-large;
+    text-align: center;
+}
+
+p.description {
+    font-family: Arial;
+    text-align: center;
+    height: 8vw;
+  
+}
+
+h3.product-name {
+    width: 100%;
+    height: 6vw;
+    object-fit: cover;
+}
+
+.card:hover {
+    transition: 0.5s;
+    transform: scale(1, 1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    border:solid 2px rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+    bottom: 5%;
+    left: 5%;
+    right: -5%;
+    border-radius: 15px;
+    position: absolute;
+
+}
+
+.card button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.btnLogReg {
+    border: none;
+    outline: 2;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255,0);
+    border:solid 2px rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    bottom: 5%;
+    left: 5%;
+    right: -5%;
+    border-radius: 15px;
+    width: auto;
+}
+
+.btnTemplate {
+    border: none;
+    outline: 2;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255,0);
+    border:solid 2px rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    bottom: 5%;
+    left: 5%;
+    right: -5%;
+    border-radius: 15px;
+    width: auto;
+}
+
+.btnTemplate:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.btnTemplateBlack {
+    border: none;
+    outline: 2;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    border:solid 2px rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    bottom: 5%;
+    left: 5%;
+    right: -5%;
+    border-radius: 15px;
+    width: auto;
+}
+
+.btnTemplateBlack:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.btnTemplateClose {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: rgb(178, 43, 43);
+    background: rgba(255, 255, 255,0);
+    border:solid rgb(178, 43, 43);
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    bottom: 5%;
+    left: 5%;
+    right: -5%;
+    border-radius: 15px;
+    width: auto;
+    font-weight: bold;
+}
+
+.btnTemplateClose:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(178, 43, 43);
+    font-weight: bold;
+}
+
+.btnIncreaseDecrease {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: Black;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    bottom: 5%;
+    left: 5%;
+    right: -5%;
+    border-radius: 15px;
+    width: auto;
+}
+
+.btnIncreaseDecrease:hover {
+    opacity: 0.7;
+    background-color: rgb(232, 232, 232);
+    font-weight: bold;
+}
+
+.info {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.name {
+    text-align: center;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 50px;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+    color: white;
+}
+.midlogo{
+    text-align: center;
+}
+
+.slogan {
+    
+    text-align: center;
+    font-size: 2rem;
+    line-height: 70px;
+    color: white;
+}
+
+#information {
+    font-size: 130% !important;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    width: 80%;
+    padding: 2%;
+    margin-left: 10%;
+    margin-top: 1rem;
+    position: absolute;
+}
+
+#navbarprim {
+    opacity: 100%;
+}
+
+#navbarprim a {
+    color: white;
+}
+
+#home_container {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100vw;
+}
+
+@media (min-width: 768px) {
+    .hash-list.cols-3>li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .hash-list.cols-3>li {
+        width: 33.3333%;
+    }
+}
+
+.pad-30,
+.pad-30-all>* {
+    padding: 0px;
+}
+
+img {
+    border: 0;
+}
+
+.mgb-20,
+.mgb-20-all>* {
+    margin-bottom: 20px;
+}
+
+.wpx-100,
+.wpx-100-after:after {
+    width: 100px;
+}
+
+.img-round,
+.img-rel-round {
+    border-radius: 50%;
+}
+
+.padb-30,
+.padb-30-all>* {
+    padding-bottom: 30px;
+}
+
+.mgb-40,
+.mgb-40-all>* {
+    margin-bottom: 0px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+[class*="line-b"] {
+    position: relative;
+    padding-bottom: 20px;
+    border-color: #E6AF2A;
+    color: #E6AF2A;
+}
+
+.fg-text-d,
+.fg-hov-text-d:hover,
+.fg-active-text-d.active,
+.fs-110,
+.font-cond {
+    color: rgb(255, 254, 254);
+}
+
+
+.skillnadbutton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 17.5%;
+    right: 0;
+    height: 30vh;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.readbutton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 17.5%;
+    height: 30vh;
+    margin-top: 10%;
+}
+
+.mr-auto {
+    align-self: center;
+    margin-left: 65% !important;
+}
+
+.navrightside {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.login {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu {
+    width: 330% !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+#modalRegSuccess {
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-dialog {
+    padding-top: 50px;
+    width: 30%;
+    /*height: 300px;*/
+    margin: auto;
+}
+
+/* Contactpage icons*/
+.icons_for_contacpage {
+    margin-right: 12px;
+}
+
+/*Contact page image for address/location */
+#imageForContactparagraph {
+    margin-bottom: 0px;
+}
+
+/* Contact page Address field 2 */
+#address_paragraph_for_contactpage_one {
+    margin-top: 0px;
+    margin-left: 47px;
+    margin-bottom: 0px;
+}
+
+/* Contact page Address field 3 */
+#address_paragraph_for_contactpage_two {
+    margin-top: 6px;
+    margin-left: 47px;
+    margin-bottom: 0px;
+}
+
+/*Contact page netz header*/
+#ContactPageNetzheader {
+    text-align: left;
+    font-style: normal;
+    font-family: "Netz";
+    font-size: 35pt;
+    margin-bottom: 0px;
+
+}
+
+/*Contact page background image*/
+#ContactepageBackground {
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    top: 0px;
+}
+
+#penguinebackground {
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    top: 0px;
+}
+
+/*Contact page text with a margins on the sides */
+.contactPageText{
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: left;
+}
+
+/*Contact page white page over image*/
+.ContactPageForm {  
+    margin:auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 13%;
+    text-align: left;
+    display: grid;
+  
+}
+
+.align-center {
+    text-align: center;
+}
+
+.imgcontainer {
+    width: 100%;
+    padding-top: 56.25%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBG 40s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(./creativecontent/1449356.jpg);
+    filter: brightness(60%);
+
+}
+
+.hidden {
+    visibility: hidden;
+  }
+
+@keyframes slideBG {
+    0% {
+        background-image: url(./creativecontent/1449356.jpg);
+    }
+
+    12.5% {
+        background-image: url(./creativecontent/1449356.jpg);
+    }
+
+    25% {
+        background-image: url(./creativecontent/Biomassbackground.jpg);
+    }
+
+    37.5% {
+        background-image: url(./creativecontent/Biomassbackground.jpg);
+    }
+
+    50% {
+        background-image: url(./creativecontent/Biomassbackground.jpg);
+    }
+
+    62.5% {
+        background-image: url(./creativecontent/Biomassbackground.jpg);
+    }
+
+    75% {
+        background-image: url(./creativecontent/ContactpagePicture_scale.jpg);
+    }
+
+    87.5% {
+        background-image: url(./creativecontent/ContactpagePicture_scale.jpg);
+    }
+
+    100% {
+        background-image: url(./creativecontent/1449356.jpg);
+    }
+
+}
+
+.imgtext {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30vh;
+}
+
+#home_container_button {
+    position: absolute;
+    right: 0;
+    margin: 5%;
+}
+
+.readbutton {
+    margin-right: 5%;
+}
+
+.smallertext {
+    font-size: 2rem;
+}
+
+/* BACKGROUND FOR TELLAFRIEND */
+#tellafriendPageBackground {
+    position: relative;
+    text-align: center;
+    background: url(./creativecontent/penguineBackground.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 66.51%
+}
+
+/* QUESTIONARE FOR TELLAFRIEND */
+.rowTellAFriend {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* CONTAINER FOR CALCULATOR */
+.calculatorContainer {
+    display: grid;
+    grid-template-rows: 40% 40% 20%;
+}
+
+/* CALCULATOR QUESTIONS */
+.Carbonquestionare {
+    grid-row: 1/2;
+    background: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+}
+
+/* ERROR MESSAGE FOR INPUT OF WRONG VEHICLE */
+.errorVehicle {
+    grid-row: 3/4;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: x-large
+}
+
+
+/* CONTAINER FOR CALCUATOR CALULCATIONS */
+.Carbonanswer {
+    grid-row: 2/3;
+    margin-top: 10%;
+
+    background: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+}
+
+/* BACKGROUND FOR CALCULATORPAGE */
+#calculatorPageBackground {
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    top: 0px;
+}
+
+.rowTellAFriend {
+    position: absolute;
+    top: 15%;
+    margin: auto;
+    width: 30%;
+}
+
+.columnTellAFriend {
+    padding: 30px;
+    text-align: center;
+    align-content: center;
+
+    /* right: 50%;*/
+}
+
+#facebookButton {
+
+    background-color: rgb(0, 68, 255);
+    border-color: rgb(0, 68, 255);
+}
+
+#facebookButton:hover {
+    background-color: rgb(69, 78, 245);
+
+}
+
+/* CONTAINER FOR MYPAGES */
+.myPagesContainer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 70% 40%;
+
+}
+
+#footerText {
+    color: white;
+}
+
+.footerList {
+    text-decoration: white;
+    color: white;
+    width: 8rem;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    padding: 1rem;
+}
+
+/* INFO OF THE USER IN MYPAGES */
+.myAccount {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    text-align: center;
+    padding-top: 5%;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(245, 244, 239);
+}
+
+/* ORDERHISTORY IN MYPAGES */
+.myAccountOrderHistory {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* ERROR MESSAGE FOR NO ORDERHISTORY */
+.errorMessageNoOrderHistory h3 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    text-align: center;
+    font-size: 400%;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #ef9999, #6d0000);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 10%;
+}
+
+/* DYNAMIC PROFILE PICTURE IN MYPAGES */
+.profilepicturemypages {
+    width: 70%;
+    height: auto;
+}
+
+
+/* AMOUNT OF CARBON SAVED MYPAGES */
+.cabonAmountAccount {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(245, 244, 239);
+}
+
+/* HEADER FOR ORDERS */
+.orderHistory h3 {
+    font-size: 400%;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #501fd9, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.purchaseHistory {
+    grid-area: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    margin-bottom: 100px;
+}
+
+/* HEADER FOR AMOUNT OF CARBON */
+.cabonAmountAccount h2 {
+    font-size: 200%;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #501fd9, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#checkbox {
+    font-size: 80%;
+}
+
+.form-check-input {
+    width: 60% !important;
+    height: 60% !important;
+    left: -20% !important;
+}
+
+#search_title {
+    position: relative;
+    text-align: left;
+    width: 200px;
+}
+
+#search_subtitle {
+    position: relative;
+    left: 8%;
+    text-align: left;
+    font-size: 85%;
+
+}
+
+#navbarprim:hover {
+    background-color: white;
+    transition: background-color 0.5s;
+    background-image: none;
+
+}
+
+#navbarprim:hover a {
+    color: black;
+}
+
+#navbarprim:hover #profile_button {
+    color: black;
+    border:solid 2px rgb(0, 0, 0);
+}
+
+#calcResult button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.popup .popuptext {
+
+    width: 60px;
+    background-color: green;
+    color: rgb(246, 245, 245);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 20;
+    bottom: -25%;
+    margin-left: -10px;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+
+}
+
+.popup .popuptext::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: rotate(-45deg);
+    background: green;
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: calc(50% - 5px);
+
+}
+
+.rowThanks {
+    position: absolute;
+    top: 15%;
+    margin: auto;
+    width: 70%;
+}
+
+.columnThanks {
+    padding: 30px;
+    text-align: left;
+    right: 200%;
+}
+
+
+/* BACKGROUND FOR CALCULATORPAGE */
+#productBackground {
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    top: 0px;
+}
+
+#FAQPage {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#submitlog, #submitreg {
+    margin:auto;
+    display:block;
+}
+
+.stories {
+    /* background: rgba(126, 180, 241, 0.5); */
+    text-align: center;
+    align-content: center;
+    padding: 5%;
+   
+}
+.customer_container2 {
+    background:rgb(6, 4, 19);
+    color: white;
+    display: grid;
+    grid-template-rows: 16% 28% 28% 28%;
+}
+
+.customer_header {
+    grid-row: 1/2;
+    padding: 5%;
+    margin: 1%;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.customer_all {
+    text-align: center;
+}
+
+#customer_1 {
+    grid-row: 2/3;
+}
+
+#customer_2 {
+    grid-row: 3/4;
+}
+
+#customer_3 {
+    grid-row: 4/5;
+    margin-bottom: 3rem;
+}
+
+.customer_img {
+    width: 15%;
+    min-width: 100px;
+    margin-bottom: 5%;
+}
+
+.customer_text {
+    font-size: 200% !important;
+}
+
+.customer_name {
+    margin: 0;
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #e2dedd;
+}
+
+#modalContentRegister {
+    min-width: 200px;
+}
+
+#modalContentLogin {
+    min-width: 200px;
+}
+
+
+@media(min-width:768px) {
+    body {
+        background-color: rgb(236, 236, 233);
+    }
+
+    .name {
+        font-size: 7rem;
+        line-height: 50px;
+        padding-top: 3rem;
+        margin-bottom: 0;
+    }
+
+    #slogan {
+        line-height: 10px;
+        padding-top: 0.8rem;
+        font-size: 1.3rem;
+    }
+
+    #home_container_button {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: auto;
+        width: 250px;
+        height: 100px;
+        font-size: 150%;
+    }
+
+    #information {
+        position: absolute;
+        top: 30%;
+        font-size: 1rem;
+    }
+
+    .calculatorContainer {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100% 0%;
+    }
+
+    .Carbonquestionare {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .Carbonanswer {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-right: 10%;
+        background: rgba(255, 255, 255, 0.5);
+        background-size: cover;
+    }
+
+    .errorVehicle {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .grid-container {
+        grid-template-rows: 20% 80%;
+    }
+
+    .ProductGrid {
+        grid-template-rows: 2/3;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .name {
+        font-size: 5rem;
+        padding-top: 10rem;
+    }
+
+    #slogan {
+        padding-top: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    #home_container_button {
+        top: 250%;
+    }
+
+    #information {
+        position: absolute;
+        top: 25%;
+        font-size: 1rem;
+    }
+
+
+    .productimg {
+        width: 100%;
+        height: 100%;
+        height: 7vw;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .customer_container2 {
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+    }
+    
+    .customer_header {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        padding: 5%;
+        margin: 1%;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    .customer_all {
+        margin-bottom: 3rem;
+    }
+    
+    #customer_1 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #customer_2 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    
+    #customer_3 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    
+    .customer_img {
+        width: 100px;
+        margin-bottom: 5%;
+    }
+    
+    .customer_text {
+        font-size: 1rem;
+    }
+    
+    .customer_name {
+        margin: 0;
+    }
+    
+    hr {
+        width: 80%;
+        border: 0;
+        border-top: 1px solid #e2dedd;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            'menu grid grid grid grid grid'
+            'menu grid grid grid grid grid';
+        gap: 10px;
+    }
+
+    .ProductMenu {
+        grid-area: menu;
+        text-align: center;
+        font-size: x-large;
+        width: 250px;
+        color: white;
+        visibility: visible;
+    }
+
+    .ProductGrid {
+        grid-area: grid;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+        margin-bottom: 100px;
+        height: 100%;
+    
+    }
+
+    .form-check {
+        margin-left: 20px;
+        grid-area: check;
+        text-align: left;
+        font-size: small;
+    }
+
+    #search_title {
+        position: relative;
+        left: 8%;
+        text-align: left;
+    }
+
+    #Products {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #productBackground {
+        z-index: -1;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        top: 0px;
+    }
+}
+
+#InfoPageContnent {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+#ClimatePageContnent {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+.ClimatePageHeader {
+    text-align: center;
+}
+
+#infoPageButtonHeading{
+text-align: center;
+}
+
+#InfoPageButton {
+    display: grid;
+    margin: auto;
+}
+
+.GlobalGoalsLogo {
+    margin: auto;
+    display: grid;
+    max-width: 80%;
+    margin-bottom: 3%;
+
+}
+
+#GlobalaMalLink {
+    text-align: center;
+}
+
+.ClimatePageIcons {
+    margin-left: 40px;
+    margin-right: 30px;
+    float: left;
+}
+
+#ClimatePageButton {
+    display: grid;
+    margin: auto
+}
+
+.ClimatePageTextForIcons{
+    margin-top: 1%;
+}
+#footer {
+    height: 1%;
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: small;
+    color: white;
+    background-color: #262626;
+}
+
+#ProcessingDataText{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+#text-center p-3{
+    text-align: center; 
+}
+#tellafriendLink:hover{
+     text-decoration: none;
+}
+#ContactUsLink:hover{
+    text-decoration: none;
+}
+
+  #netzt {
+    height: 1%;
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: small;
+}

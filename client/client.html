@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- FB Share -->
+
+  <meta property="og:url" content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Your Website Title" />
+  <meta property="og:description" content="Your description" />
+  <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
+
+  <!-- FB Share -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="client.css">
+  <title>NetZ</title>
+  <link rel="icon" type="image/x-icon" href="../creativecontent/logo_3.png">
+
+
+
+</head>
+
+<body>
+  <!-- Navigational top bar start -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbarprim" onmouseover="onHover()" onmouseout="offHover()">
+    <a class="navbar-brand" href="#">
+      <img src="../creativecontent/biomass.jpg" width="60" height="60" class="d-inline-block align-top" alt="" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a id="home" class="nav-link" href="#">Homepage<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown" href="#">
+          <a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
+          <div class="dropdown-menu p-3" id="dropdownAboutUs">
+            <a id="InfoAboutCompany" class="nav-link" href="#">Info</a>
+            <a id="InfoAboutClimate" class="nav-link" href="#">Klimatkrisen</a>
+            <a id="FAQInDropdown" class="nav-link" href="#">Vanliga frågor</a>
+            <a id="ContactUsInDropdown" class="nav-link" href="#">Kontakta oss</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a id="products" class="nav-link" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a id="product-manager" class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a id="calculator" class="nav-link" href="#">Press Release</a>
+        </li>
+      </ul>
+      <!-- Closed Left alligned items in navbar and added clickable logos such as cart and search -->
+
+      <div class="navrightside">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="showName" class="nav-link" href="#"></a>
+          </li>
+          <button type="button" class="btnLogReg" id="profile_button" data-toggle="modal" data-target="#modalLoginForm">log in / register</button>
+          <li class="nav-item" href="#" id="profile_button2">
+            <div class="dropdown">
+            <a class="nav-link dropdown-toggle disabled" data-toggle="dropdown"  data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> <img
+                src="../creativecontent/Profilelogo_white.png" width="30" id="profile_button_pic2" /> </a>
+            <div class="dropdown-menu dropdown-menu-right" id="dropper">
+              <a id="userinfochange" class="nav-link" href="#">Ändra kontoinställningar</a>
+              <a id="userCangePasswordButton" class="nav-link" href="#">Ändra lösenord</a>
+              <div class="dropdown-divider"></div>
+              <a id="logut" class="nav-link" href="#">Logga ut</a>
+            </div>
+            </div>
+          </li>
+          <button type="button" class="btn btn-sm" id="search_button">
+            <img src="../creativecontent/Searchlogo_white.png" width="30" id="search_button_pic" />         </button>
+          <div class="popup">
+            <span class="popuptext" style="display: none;" id="myPopup">+1</span>
+            <button type="button" data-toggle="modal" data-target="#cart" class="btn btn-sm" id="shoppingcart_button">
+              <img src="../creativecontent/Shoppingcart_icon_white.png" width="30" id="shoppingcart_button_pic" />
+            </button>
+          </div>
+        </ul>
+      </div>
+      <!-- Closed Right alligned items in navbar-->
+    </div>
+  </nav>
+  <!-- Navigational top bar end -->
+
+  <script id="view-home" type="text/html">
+      <!-- Container for what to display at homepage -->
+  <div id="home_container" style="margin: 0 auto;">
+    <div class="imgcontainer">
+    
+    </div> 
+    <div class="imgtext">
+      <h1 class="name">Biomass</h1>
+        <br>
+        <br>
+         <p class="slogan">3D Printing the Future</p>
+     
+      </div>
+<br> <br> <br>
+        <p id="information">
+        </p>
+        <div class="co2info" id="co2info">
+        </div>
+    <div class="skillnadbutton">
+      <!--Clickable button -->
+      <button type="button" class="btnTemplate" id="home_container_button" onclick="
+        showProductsView()
+        showProducts()">Purchase Now!</button>
+      
+    </div>
+    <div class="readbutton">
+      <!--Clickable button -->
+      <button type="button" class="btnTemplate" id="home_container_button" onclick="
+        showInfoPage()
+        ">Demo video!</button>
+      
+    </div>
+    
+    <!-- 2Container for user stories -->
+    <div class="customer_container2">
+      <div class="customer_header">
+        <h1 class="customer_text">Vad är
+          klimatkompensering
+          för dig?</h1>
+      </div>
+
+      <div class="stories" id="customer_1">
+        <hr>
+        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="customer_img img-round" title="" alt="">
+        <p>"Vi kunde både snabbt och smidigt klimatkompensera för vår klassresa till Barnens Ö! Stort tack till NetZ och den fantastiska service ni gav när vi ringde med funderingar."</p>
+        <h5 class="customer_name">4B</h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Myrstacksskolan - Bromma</small>
+      </div>
+
+
+      <div class="stories" id="customer_2">
+        <hr>
+        <img src="https://bootdey.com/img/Content/avatar/avatar8.png" class="customer_img img-round" title="" alt="">
+        <p>"Äntligen ett verktyg som gemene man kan lära sig att använda! Kämpa på NetZ, vi står bakom er!"</p>
+        <h5 class="customer_name">Märta Stenevi</h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Miljöpartist - Lund</small>
+      </div>
+
+
+
+      <div class="stories" id="customer_3">
+        <hr>
+        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="customer_img img-round" title="" alt="">
+        <p>"Tack grabbar och tjejer på NetZ för möjliggörandet att klimatkompensera för mitt ”Pendlande” over the pond. Mina döttrar är stolta över mig." 
+        </p>
+        <h5 class="customer_name">Hans Westberg</h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">VD Verizon -
+          Greenwich</small>
+      </div>
+
+    </div>
+    <!-- 2 Container for user stories END -->
+
+  </div>
+  <!-- Container for what to display at homepage END -->
+
+  </script>
+
+
+  <!-- START script for what to display at Info Page START -->
+  <script id="view-InfoPage" type="text/html">
+    <div id="InfoPageContnent">
+      <h1 id="ContactPageNetzheader"> Netz</h1>
+      <a id="FAQ_button" class="contactPageText" href="#">Vanliga frågor och svar</a>
+      <p class="contactPageText"> På Net Z jobbar vi mot en mer hållbar framtid. Vi vill ge privatpersoner makten att kunna påverka klimatförändringarna. 
+        Genom vårt verktyg ger vi möjligheten att kunna kompensera för sina utsläpp genom att tvinga företagen att släppa ut 
+        mindre miljöfarliga gaser. 
+      </p>
+      <br>
+      <h3 class="contactPageText">Hur gör vi då detta?</h3>
+      <p class="contactPageText"> Inom EU finns ett handelssystem för så kallade utsläppsrätter. 
+        Företag måste enligt lag ha dessa för att få släppa ut koldioxid och andra miljöskadliga ämnen. 
+        Antalet totala utsläppsrätter sjunker varje år, men vi tycker att det går för långsamt. 
+        För att tvinga fram en snabbare utveckling låter vi privatpersoner köpa utsläppsrätter vilket tar bort dessa från 
+        marknaden vilket i slutändan leder till att företagen inte kan och får släppa ut lika många miljöskadliga ämnen. 
+      </p>
+      <p class="contactPageText">Till skillnad från till exempel trädplantering som kompenserar för utsläppen gör vårt verktyg att den totala 
+        mängden utsläpp minskar. Detta gör att du som privatperson kan vara med och bidra till minskade utsläpp utan att 
+        nödvändigtvis ändra dina egna vanor eller din livsstil. 
+      </p>
+      <br>
+      <h5 id="infoPageButtonHeading">Vi behöver din hjälp att skapa en bättre framtid för alla <br> Ta ansvar för dina utsläpp nu! </h5> 
+      <div>
+        <!--Clickable button -->
+        <button type="button" class="btnTemplateBlack" id="InfoPageButton" onclick="
+          showProductsView()
+          showProducts()">Gör skillnad nu!</button>
+      </div>
+      <br>
+      <br>
+      <p>Att klimatkompensera bidrar inte bara till reducerade utsläpp av växthusgaser utan till hållbar utveckling i 
+        allmänhet. Klimatförändringarna är ett hot mot en hållbar värld i allmänhet. Klimatförändringar hotar människors 
+        levnadsstandard. Matförsörjning, tillgången till rent vatten och ekonomisk tillväxt etcetera hotas av klimatkrisen. 
+        Att ta ansvar för sitt eget klimatavtryck är första steget mot en hållbarframtid.</p>
+        <br>
+        <h3>Industrins utsläpp</h3>
+        <img src="../creativecontent/EmissionStatistics.png" class="GlobalGoalsLogo">
+        <p>Sedan 1990 har utsläppen av växthusgaser från Sverige minskat med 29 procent, där hushållen är att tacka för 
+          det mesta av förbättringen medan företag och industrier fortfarande bär skulden till den större delen utsläpp. 
+          År 2020 stod de olika industrisektorerna tillsammans för 31 procent av Sveriges totala utsläpp. Privatpersoner 
+          har länge varit och är fortsatt intresserade av miljön, men industrierna hänger inte med. Vår tjänst gör det 
+          möjligt för dig som privatperson att ta ansvar för dina egna utsläpp och samtidigt stoppa industrins utsläpp</p>
+          <br>
+      <h3>De Globala Målen</h3>
+      <p>2015 antog alla FN:s medlemsländer Agenda 2030. Den innehåller 17 stycken globala mål för hållbar utveckling.
+         Med dessa ska man uppnå avskaffande av fattigdom, jämlikhet, fred och rättvisa samt att lösa klimatkrisen. 
+         Alla mål är beroende av varandra. Det innebär att utan miljömässig hållbarhet kommer vi inte ha sociala eller 
+         ekonomisk hållbarhet.</p>
+         <img src="../creativecontent/globalamallogo.png" class="GlobalGoalsLogo">
+         <div id="GlobalaMalLink" >
+          <a href="https://www.globalamalen.se">Mer om Globala Målen här</a>
+        </div>  
+        <br>
+      <p>För oss på Net Z är hållbar utveckling i alla dimensioner essentiell. Vi jobbar inte bara med miljömässig 
+        hållbarhet utan integrerar även social och ekonomisk hållbarhet i vårt arbete dagligen. Alla beslut som fattas 
+        hos oss tar hänsyn till de Globala målen och främjar hållbar utveckling. </p>
+        <br>
+        <br>
+        
+    </div> 
+  </script>
+  <!-- END script for what to display at Info Page END -->
+
+  <!-- START script for what to display at Climategoal Page START -->
+  <script id="view-ClimateGoal" type="text/html">
+    <div id="ClimatePageContnent">
+      <h1 class="ClimatePageHeader">Klimatkrisen</h1>
+      <br>
+      <p>Vårt klimat förändras snabbare än på tusentals år. Orsaken är våra utsläpp av växthusgaser som snabbat på 
+        den globala uppvärmningen. Men ännu är det inte för sent att stoppa den nuvarande utvecklingen. Om vi alla 
+        tar ansvar över våra utsläpp kan vi tillsammans bromsa klimatförändringarna. </p>
+        <br>
+      <h3>Konsekvensen av den globala uppvärmningen</h3>
+      <p>Om vi inte lyckas nå målet att begränsa den globala uppvärmningen till1,5 grader står vi inför en definitiv 
+          katastrof. Redan idag påverkas alla delar av planeten av klimatförändringar och dessa kommer bli allt 
+          allvarligare i takt med att den globala medeltemperaturen ökar. Extrem torka, värmeböljor och översvämningar 
+          kommer att bli allt vanligare vilket hotar livsförutsättningarna för miljontals människor. </p>
+      <p>Klimatkrisen är också en fråga om social rättvisa. Redan i dagens samhälle är det de allra fattigaste som drabbas hårdast av 
+        klimatförändringarna och så kommer det vara även i framtiden. Klimatförändringarna kommer också att öka antalet 
+        som lever i fattigdom och väntas leda till ett stort antal klimatflyktingar. </p>
+        <br>
+      <h3>Vid +2º global temperaturhöjning:</h3>
+      <p> 
+        <img class="ClimatePageIcons" src="../creativecontent/IcebergIcon.png" width="50" >
+        <p class="ClimatePageTextForIcons">Arktis riskerar att helt smälta under sommaren</p>
+      </p>
+      <br>
+      <p>
+        <img class="ClimatePageIcons" src="../creativecontent/FoodIcon.png" width="50" >
+        <p class="ClimatePageTextForIcons">30% riskerar säker tillgång till livsmedel i Asien och Afrika</p>
+      </p>
+      <br>
+      <p>
+        <img class="ClimatePageIcons" src="../creativecontent/FireIcon.png" width="50" >
+        <p class="ClimatePageTextForIcons">Över 60% fler skogsbränder kring medelhavet </p>
+      </p>
+      <br>
+      <p>
+        <img class="ClimatePageIcons" src="../creativecontent/CoralIcon.png" width="50" >
+        <p class="ClimatePageTextForIcons">Korallreven dör ut</p>
+      </p>
+      <br>
+      <p>
+        <img class="ClimatePageIcons" src="../creativecontent/TempIcon.png" width="50" >
+        <p class="ClimatePageTextForIcons">Extrema värmeböljor ökar med 343%
+      </p></p>
+      <br>
+      <p>
+        <img class="ClimatePageIcons" src="../creativecontent/FloodIcon.png" width="50" >
+        <p class="ClimatePageTextForIcons">57% fler som påverkas av översvämningar i Indien</p>
+      </p>
+      <br>
+      
+      <p>Det är obestridligt att den globala uppvärmningen ökat på grund av människans påverkan (huvudsakligen genom 
+        utsläpp av växthusgaser). Om vi ska nå 1,5 gradersmålet krävs det att vi år 2030 halverat våra utsläpp av 
+        växthusgaser. År 2050 behöver vi nå nettonoll utsläpp, det vill säga endast släppa ut lika mycket växthusgaser 
+        som kan tas upp. Om vi misslyckas med detta är katastrofen ett faktum. </p>
+        <h3 class="ClimatePageHeader">Framtidens klimat bestäms av utvecklingen av utsläpp. </h3>
+        <button type="button" class="btnTemplateBlack" id="ClimatePageButton" onclick="
+          showProductsView()
+          showProducts()">Klimatkompensera nu!</button>
+          <br>
+          <br>
+         
+    </div>
+  </script>
+  <!-- END script for what to display at CLimategoal Page END -->
+
+  <!-- script for what to display at Contact Page START -->
+  <script id="view-Contact" type="text/html">
+    <div class="ContactPageForm">
+      <h1 class="contactPageText">Kontakta oss</h1>
+      <br>
+      <p>Vid frågor eller problem hör av dig till vår kundtjänst via mail så svarar vi så fort vi har möjlighet. 
+        Du kan även ringa till oss mellan 7-16 varje helgfri vardag</p>
+      <br>
+      <a class="contactPageText" href="mailto:info@netz.se">
+        <img class="icons_for_contacpage" src="../creativecontent/email_icon.png" width="30" >
+        info@netz.se
+      </a>
+      <p></p>
+      <a class="contactPageText"href="tel:1234567890">
+        <img class="icons_for_contacpage" src="../creativecontent/phone_icon.png" width="30" >
+        +123-456 78 90
+      </a>
+      <p></p>
+      <p class="contactPageText" id="imageForContactparagraph" > 
+        <img class="icons_for_contacpage" src="../creativecontent/location_icon.png" width="30" >
+        Stratomtavägen
+      </p>
+      <p id="address_paragraph_for_contactpage_one"> 
+        Linköpings universitet 
+      </p>
+      <p id="address_paragraph_for_contactpage_two">
+        583 30 Linköping
+      </p>
+    </div>
+  </script>
+  <!-- script for what to display at Contact Page END -->
+
+  <!-- START script for what to display at FAQ Page START -->
+  <script id="view-FAQ" type="text/html">
+    <div id="FAQPage">
+    <div>
+      <h1>Vanliga frågor och svar</h1>
+      <br>
+    </div>
+    
+    <div id="accordion">
+      <!--START Frågor om klimatkompensation START-->
+      <div>
+      <h3>Frågor om klimatkompensation</h3>
+      
+      <div class="card_FAQ">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Vad är en utsläppsrätt?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            En utsläppsrätt innebär att innehavaren har rätt att släppa ut växthusgaser motsvarande ett ton koldioxid. 
+            Utsläppsrätter omfattar inte bara koldioxidutsläpp utan även utsläpp av andra starka växthusgaser som perfluorkolväten 
+            och dikväveoxid. Det totala antalet utsläppsrätter inom EU är begränsat och minskar i antal varje år för att också 
+            minska utsläppen av växthusgaser. Företag får inte ha färre utsläppsrätter än de har utsläpp, då straffas de ekonomiskt.  
+          </div>
+        </div>
+      </div>
+
+      <div class="card_FAQ">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Hur fungerar utsläppshandel?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            EU:s utsläppshandelsystem, ETS, har funnits sedan 2005 och gäller för alla EU:s medlemsländer. 
+            Utsläppsrättshandel är ett av EU:s viktigaste initiativ för att minska växthusgaser och nå 
+            nettonollutsläpp till år 2050. Utsläppsrättshandeln omfattar idag ca 40 procent av de totala 
+            koldioxidutsläppen inom EU. Även växthusgaser som perfluorkolväten och dikväveoxid regleras av EU:s 
+            utsläppsrättshandel. 
+            <br>
+            <br>
+            Auktionering av utsläppsrätter är den huvudsakliga principen för tilldelning av utsläppsrätter. 
+            Det är den mest transparenta metoden för att fördela utsläppsrätter. Auktionering innebär också att de 
+            som faktiskt gjort sig skyldiga till utsläpp måste betala för det. År 2013 auktionerades ungefär 40% av 
+            de totala utsläppsrätterna och målet är att 2027 ska 100% av utsläppsrätterna i EU auktioneras ut. I 
+            Sverige är Riksgälden den myndighet som är ansvarig för all auktioneringen av utsläppsrätter. Alla 
+            medlemsländer är skyldiga att följa ETS direktiv och regler gällande aktioner när de auktionerar ut 
+            utsläppsrätter. 
+          </div>
+        </div>
+      </div>
+
+      <div class="card_FAQ">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Vad är klimatkompensation?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Klimatkompensation innebär att den som gjort sig ansvarig för utsläpp betalar för att minska 
+            motsvarande mängd utsläpp någon annanstans. Detta kan göras genom att exempelvis trädplantering, 
+            investera i klimatsmarta projekt eller köp av utsläppsrätter. Utsläppen av växthusgaser behöver minska 
+            om vi ska nå klimatneutralitet fram till år 2050. Den rika delen av världen måste ta ansvar för att inte 
+            bara finansiera klimatanpassning i låginkomstländer utan också minska sina egna utsläpp. 
+          </div>
+        </div>
+      </div>
+
+      <div class="card_FAQ">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Vad får jag när jag klimatkompenserar?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            Vid ett genomfört köp så får du ett certifikat som anger den volym utsläpp som du kompenserat för. 
+            Du får även ett kvitto som verifierar din betalning
+          </div>
+        </div>
+      </div>
+
+      <div class="card_FAQ">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Fungerar klimatkompensation?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+            Klimatkompensation bör inte göras istället för att minska sina utsläpp, utan bör kombineras med ett 
+            förändrat beteende. Att klimatkompensera ger dig möjligheten att tillfullo ta ansvar för din 
+            klimatpåverkan. 
+            <br>
+            <br>
+            Att köpa fler utsläppsrätter man inte använder, det vill säga att köpa mer utsläppsrätter än man har 
+            utsläpp leder till en faktiskt minskning av den totala mängden utsläpp av växthusgaser
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END Frågor om klimatkompensation END-->
+<br>
+<br>
+    <!--START Frågor om pris START-->
+    <div>
+
+      <h3>Frågor om pris </h3>
+
+      <div class="card_FAQ">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Hur beräknas priset? 
+            </button>
+          </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="card-body">
+            Priset baseras på hur mycket en utsläppsrätt kostar vid köptillfället
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card_FAQ">
+      <div class="card-header" id="headingSeven">
+        <h5 class="mb-0">
+          <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Är det moms på klimatkompensation?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+        <div class="card-body">
+          Enligt svensk lag är det 25% moms vid handel med utsläppsrätter
+        </div>
+      </div>
+    </div>
+
+    <div class="card_FAQ">
+      <div class="card-header" id="headingEight">
+        <h5 class="mb-0">
+          <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            Kan jag ångra ett köp?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+        <div class="card-body">
+          Det är tyvärr inte möjligt att ångra ett genomfört köp
+        </div>
+      </div>
+    </div>
+
+    <div class="card_FAQ">
+      <div class="card-header" id="headingNine">
+        <h5 class="mb-0">
+          <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            Vilka betalningsmetoder accepterar ni?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+        <div class="card-body">
+          Vi accepterar endast kortbetalning
+        </div>
+      </div>
+    </div>
+
+    <div class="card_FAQ">
+      <div class="card-header" id="headingTen">
+        <h5 class="mb-0">
+          <button class="btn btn collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            Vart hittar jag mina certifikat?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+        <div class="card-body">
+          Dina tidigare certifikat hittar du under fliken ”orderhistorik” på dina sidor. 
+        </div>
+      </div>
+    </div>
+    <!--END Frågor om pris END-->
+     <br>
+     <br>
+    
+    </div>
+  </div>
+  </script>
+  <!-- END script for what to display at FAQ Page END -->
+
+
+  <!--TIPSA EN VÄN SIDA START-->
+  <script id="view-tellafriend" type="text/html">
+    <div class="tellafriendContainer" id="tellafriendPageBackground">
+      
+   
+      <div class="rowTellAFriend" style="left:33%" >
+        <div class="columnTellAFriend">
+          <h1>Tipsa en vän</h1>
+          <p>
+            Hjälp oss gärna att sprida NetZ genom <br> 
+            att tipsa en vän om att klimatkompensera!<br> 
+            Du kan till exempel inspirera dina vänner <br>
+            genom att dela på Facebook vad du har 
+            kimatkompenserat för!  
+          </p>
+          
+            <!--Dela på facebook!-->
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://www.example.com&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!"
+              target="_blank"
+              onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"
+            >
+              <button
+                type="submittellafriend"
+                class="btnTemplate"
+                id="facebookButton"
+              >
+                <img src="../creativecontent/facebook.png" width="20" />
+                <i class="fa fa-facebook fa-2"></i> Dela på Facebook
+              </button>
+            </a>
+            <!--Här slutar dela på facebook!-->
+          </form>
+        </div>
+      </div>
+    </div>
+  </script>
+  <!--TIPSA EN VÄN END-->
+
+  <!--POP-UP EFTER TIPSA EN VÄN START-->
+  <div class="modal fade" id="modalTellFriendSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4>Ditt meddelande har skickats!</h4>
+          <div class="modal-footer d-flex justify-content-center">
+            <button id="okFriendButton" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--POP-UP EFTER TIPSA EN VÄN SLUT-->
+
+  <script id="view-products" type="text/html">
+    <div>
+      <img src="..\creativecontent\desert.jpg" id="productBackground">
+    </div>
+    <div class="grid-container">
+      <div class = "ProductMenu" id=search_container> 
+        <h3 id="search_title" >Hittar du inte det du letar efter?</h3>
+        <div class="col-sm-12 mb-3">
+             <input type="text" id="myFilter" class="form-control" onkeyup="FilterFunction()" placeholder="Sök efter produkter..">
+           </div>
+           <h3 id="search_subtitle"> Kategorier: </h3>
+           <div class="form-check" id="checkbox"> 
+            <input class="form-check-input" onclick="FilterCheckbox(this)" type="checkbox" value="" id="resa"  >
+            <label class="form-check-label" for="flexCheckDefault">
+              Resa
+            </label>
+          </div>
+          <div class="form-check" id="checkbox">
+            <input class="form-check-input" onclick="FilterCheckbox(this)"type="checkbox" value="" id="pendling">
+            <label class="form-check-label" for="flexCheckDefault">
+              Pendling
+            </label>
+          </div>
+          <div class="form-check" id="checkbox">
+            <input class="form-check-input" onclick="FilterCheckbox(this)" type="checkbox" value="" id="mat">
+            <label class="form-check-label" for="flexCheckDefault">
+              Mat
+            </label>
+          </div>
+          <div class="form-check" id="checkbox">
+            <input class="form-check-input" onclick="FilterCheckbox(this)" type="checkbox" value="" id="mängd">
+            <label class="form-check-label" for="flexCheckDefault">
+              Mängd
+            </label>
+          </div>
+           
+          </div>
+            <div class="ProductGrid" id = "Products"> </div>
+             
+        </div>
+    </script>
+
+
+  <script id="view-manage" type="text/html">
+      <div class ="container"> 
+      <div class = "column" id = "Rubrik">
+        <h1 class= "title"> Här kan du redigera produkterna</h1>
+       </div>
+      <div class="row" id = test> 
+        <h3 class ="title"> Här kan fler funktioner läggas till</h3>
+      </div> 
+      <div class="modal fade" id="selectId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Redigera bil</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="idForm">
+
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <p>&copy; NetZ 2022</p>
+        </footer>
+      </div>
+
+
+    
+
+    <div class="container-fluid">
+      <div class="modal fade" id="redigeraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Redigera bil</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="rForm">
+
+
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add product</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="aForm">
+                  
+            </div>
+          </div>
+        </div>
+       </div>
+      </div> 
+    </script>
+
+  <script id="view-userinfo" type="text/html">
+      <h1>Redigera uppgifter</h1>
+         <form id="editUser" action="sample.php">
+          <div class="modal-body" id="rForm">
+              
+          </div>
+        </form>
+    </script>
+
+  <script id="view-changePassword" type="text/html">
+      <h1>Byt lösenord</h1>
+         <form id="editPassword" action="sample.php">
+          <div class="modal-body" id="editPasswordDiv">
+            <form id=editPasswordForm action=sample.php size="50"> 
+
+              <div class=form-group> 
+                <label for=name>Nuvarande lösenord</label> 
+                <input type="password" id="oldPassword" class="form-control validate" size="20"/>
+              </div> 
+              <div class="modal-body" id="notRightOldPassword">
+              </div>
+
+              <div class=form-group> 
+                <label for=price>Nytt Lösenord</label> 
+                <input type="password" id="newPassword" class="form-control validate" size="20"/>
+              </div> 
+              <div class="modal-body" id="notOkNewPassword">
+              </div>
+
+              <div class=form-group> 
+                <label for=price>Konfirmera Lösenord</label> 
+                <input type="password" id="newPasswordConfirm" class="form-control validate" size="20"/>
+              </div> 
+              <div class="modal-body" id="notSameNewPassword">
+              </div>
+
+              <button type=button id=closeButton class='btnTemplateClose' data-dismiss=modal aria-label=Close onclick="
+              showNameLoggedin();
+              showMyPages();">Stäng</button> 
+              <button id=saveChangedPassword class='btnTemplateBlack' data-dismiss=modal aria-label=Close >Spara</button> </form> 
+        </div>
+        </form>
+    </script>
+
+   <!-- NEDAN AN ÄR THANK YOU -->
+  <script id="view-thanks" type="text/html">
+    <div>
+      <img src="..\creativecontent\flying-bird.jpg" id="penguinebackground">
+    </div>
+      <div class="rowThanks" style="text-align:center; left:20%;">
+        <div class="columnThanks" style="text-align:center;">
+          <div class ="invoice" id ="invoice" style="color:rgb(255, 255, 255)" > 
+            <h1><span style="color:rgb(255, 255, 255)">Tack för ditt köp - Du bidrar till en mer hållbar framtid!</span></h1>
+            <div class="coldioxid" id="coldioxid" style="position:relative; top:50;"></div>
+              
+            </div>
+
+            <div class="co2" id="co2" style="position:relative; top:200px; color:rgb(255, 255, 255); border-radius: 25px; backdrop-filter: blur(9px); width: 50%;  left: 25%;">
+              <h3> <u>Din orderinformation:</u></h3>
+            </div>
+          </div>
+          <p>
+            <div class="fb-share-button" style="position:relative; top:200px;"
+                data-href="http://127.0.0.1:5000/?thankyou" 
+                data-layout="button_count">
+            </div>             
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    </script>
+
+  <!-- OVAN ÄR THANK YOU-->
+
+
+
+  <!-- HTML FOR CO2 CALCULATOR -->
+  <script id="view-calculator" type="text/html">
+    <div class="calculatorContainer">
+    <div>
+      <img src="..\creativecontent\calculatorPageBackground.jpg" id="calculatorPageBackground">
+    </div>
+
+    <datalist id="vehicle">
+      <option value="Flyg"></option>
+      <option value="Tåg"></option>
+      <option value="Bil"></option>
+    </datalist>
+
+      <div class='Carbonquestionare text-black text-center'>
+        <br/>
+        <h3>KOLDIOXIDRÄKNARE FÖR</h3>
+        <h3>FORDON</h3>
+        <br/>
+        <h4>Vilket fordon?</h4>
+        <input type="text" list="vehicle" title="vehicle-selector" id="vehicle-selector" placeholder="Välj fordon" class="inputCalculator"/>
+        <br/>
+        <br/>
+        <h4>Hur många kilometer åker du i genomsnitt?</h4>
+        <input id='distance' type='number' min="0" oninput="this.value = Math.abs(this.value)" placeholder='Antal km' class="inputCalculator"/>
+        <br/>
+        <br/>
+        <h4>Hur ofta i veckan reser du?</h4>
+        <input id='trips' type='number' min="0" oninput="this.value = Math.abs(this.value)" placeholder='Antal i veckan' class="inputCalculator"/>
+        <br/>
+        <br/>
+        <button type="button" class="btnTemplate" id="calculatorButton" onclick='calcCO2()'>Kalkylera ditt koldioxidavtryck</button>
+        <div class="hidden" id="calcErrorMessege">
+          <p style=color:red>Du behöver fylla i alla fält</p>
+        </div>
+        <br/>
+      <br/>
+    </div>
+    
+    <br/>
+
+    <div class="errorVehicle" id="noVehicle">
+    </div>
+    <div class='Carbonanswer text-center hidden' id='calcResults'>
+        <h4>Ditt koldioxidavtryck per km är:</h4>
+        <h3 id='resultkm'></h3>
+      <br/>
+        <h4>Ditt koldioxidavtryck för resan är:</h4>
+        <h3 id='resulttrip'></h3>
+        <div id="tripComp"></div>
+      <br/>
+       <h4>Ditt koldioxidavtryck per vecka är:</h4>
+        <h3 id='resultweek'></h3>
+        <div id="weekComp"></div>
+        <br/>
+       <h4>Ditt koldioxidavtryck per år är:</h4>
+        <h3 id='resultyear'></h3>
+        <div id="yearComp"></div>
+    </div>
+  </div>
+  </script>
+
+  <!--LOGINFORM-->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" id="modalContentLogin">
+
+        <div class="modal-body mx-2">
+          <div class="md-form mb-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class='modal-title text-center'>Logga in</h4>
+            <br>
+            <h9>E-postadress*</h9>
+            <input type="email" id="loginemail" class="form-control validate" />
+            <div class="modal-body" id="notRegEmail">
+
+            </div>
+          </div>
+
+          <div class="md-form mb-1">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <h9>Lösenord*</h9>
+            <input type="password" id="loginpassword" class="form-control validate" />
+            <div class="modal-body" id="notRightpassword">
+
+            </div>
+          </div>
+
+
+          <div id="register-link" class="text-left" data-toggle="modal" data-target="#modalRegForm">
+            <a href="#" class="text" style="color: darkgrey;" data-dismiss="modal"> <small> Har du inte ett konto? Registrera dig </small></a>
+          </div>
+
+          <br>
+          <button id="submitlog" class="btnTemplateBlack">Logga in</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGISTERFORM  -->
+  <div class="modal fade" id="modalRegForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content" id="modalContentRegister">
+
+        <div class="modal-body mx-2">
+          <div class="md-form mb-4">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+              <span aria-hidden="true">&times;</span> </button>
+              <h4 class='modal-title text-center'>Registrera dig</h4>
+              <br>
+            <h9>Förnamn*</h9>
+            <input type="text" id="registerfirstname" placeholder="Förnamn" class="form-control validate" />
+            <div id="nofirstname">
+            </div>
+          </div>
+
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <h9>Efternamn*</h9>
+            <input type="text" id="registerlastname" placeholder="Efternamn" class="form-control validate" />
+            <div id="nolastname">
+            </div>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <h9>E-postadress*</h9>
+            <input type="text" id="registermail" placeholder="namn@exempel.se" class="form-control validate" />
+            <div id="alreadyRegEmail">
+            </div>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <h9>Lösenord*</h9>
+            <input type="password" id="registerpassword" placeholder="Lösenord" class="form-control validate" required>
+            <div id="nopassword">
+            </div>
+          </div>
+
+
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <h9>Konfirmera lösenord*</h9>
+            <input type="password" id="confirmpassword" placeholder="Lösenord" class="form-control validate">
+            <div id="nopassword">
+            </div>
+          </div>
+
+          <div>
+            <input type="checkbox" id="terms" name="terms">
+            <label>
+              <div id="login-link" class="text-right" data-toggle="modal" data-target="#villkor">
+                <a href="#" class="text" style="color: darkgrey;" data-dismiss="modal"> <small> Godkänn villkoren* </small> </a>
+              </div>
+            </label>
+            <div id="villkoren">
+            </div>
+
+          </div>
+
+
+          <div id="login-link" class="text-left" data-toggle="modal" data-target="#modalLoginForm">
+            <a href="#" class="text" style="color: darkgrey;" data-dismiss="modal"> <small>Har du redan ett konto? Logga in </small> </a>
+          </div>
+          <br>
+          <button id="submitreg" class="btnTemplateBlack">Registrera dig</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--EFTER REGISTRERING GAMMAL-->
+  <div class="modal fade" id="modalRegSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4>Du är nu registrerad!</h4>
+          <button id="okButton" data-dismiss="modal" class="btnTemplateBlack">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--EFTER REGISTRERING GAMMAL-->
+
+  <!--EFTER REGISTRERING NY^^^-->
+  <!--VÅRA VILLKOR-->
+  <div class="modal fade" id="villkor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+    style="overflow:scroll; padding-left:30px; padding-right:30px;">
+    <div class="modal-dialog" role="document" style="overflow:scroll; padding-left:30px; padding-right:30px;">
+      <div class="modal-content" style="overflow:scroll; padding-left:30px; padding-right:30px;">
+        <h4>Terms and Conditions</h4>
+        <p>
+          Welcome to netz.com!
+          <br>
+          <br>
+          These terms and conditions outline the rules and regulations for the use of NetZ's Website, located at
+          http://www.netz.com.
+          <br>
+          <br>
+          By accessing this website we assume you accept these terms and conditions. Do not continue to use netz.com if
+          you do not agree to take all of the terms and conditions stated on this page.
+          <br>
+          <br>
+          The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and
+          all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the
+          Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company.
+          "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance
+          and consideration of payment necessary to undertake the process of our assistance to the Client in the most
+          appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the
+          Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the
+          above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as
+          interchangeable and therefore as referring to same.
+          <br>
+          <br>
+        <h6>Cookies</h6>
+        We employ the use of cookies. By accessing netz.com, you agreed to use cookies in agreement with the NetZ's
+        Privacy Policy.
+        <br>
+        <br>
+        Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by
+        our website to enable the functionality of certain areas to make it easier for people visiting our website. Some
+        of our affiliate/advertising partners may also use cookies.
+        <br>
+        <br>
+        <h6>License</h6>
+        Unless otherwise stated, NetZ and/or its licensors own the intellectual property rights for all material on
+        netz.com. All intellectual property rights are reserved. You may access this from netz.com for your own personal
+        use subjected to restrictions set in these terms and conditions.
+        <br>
+        <br>
+        You must not:
+        <br>
+        <br>
+        <ul>
+          <li>Republish material from netz.com</li>
+          <li>Sell, rent or sub-license material from netz.com</li>
+          <li>Reproduce, duplicate or copy material from netz.com</li>
+          <li>Redistribute content from netz.com</li>
+        </ul>
+        This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the Terms
+        And Conditions Template.
+        <br>
+        <br>
+        Parts of this website offer an opportunity for users to post and exchange opinions and information in certain
+        areas of the website. NetZ does not filter, edit, publish or review Comments prior to their presence on the
+        website. Comments do not reflect the views and opinions of NetZ,its agents and/or affiliates. Comments reflect
+        the views and opinions of the person who post their views and opinions. To the extent permitted by applicable
+        laws, NetZ shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered
+        as a result of any use of and/or posting of and/or appearance of the Comments on this website.
+        <br>
+        <br>
+        NetZ reserves the right to monitor all Comments and to remove any Comments which can be considered
+        inappropriate, offensive or causes breach of these Terms and Conditions.
+        <br>
+        <br>
+        You warrant and represent that:
+        <br>
+        <br>
+        <ul>
+          <li>You are entitled to post the Comments on our website and have all necessary licenses and consents to do
+            so;</li>
+          <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent
+            or trademark of any third party;</li>
+          <li>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material
+            which is an invasion of privacy</li>
+          <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or
+            unlawful activity.</li>
+          <li>You hereby grant NetZ a non-exclusive license to use, reproduce, edit and authorize others to use,
+            reproduce and edit any of your Comments in any and all forms, formats or media.</li>
+        </ul>
+        <br>
+        <br>
+        <h6>Hyperlinking to our Content</h6>
+        The following organizations may link to our Website without prior written approval:
+        <br>
+        <br>
+        <ul>
+          <li>Government agencies;</li>
+          <li>Search engines;</li>
+          <li>News organizations;</li>
+          <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites
+            of other listed businesses; and</li>
+          <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and
+            charity fundraising groups which may not hyperlink to our Web site.</li>
+        </ul>
+        These organizations may link to our home page, to publications or to other Website information so long as the
+        link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the
+        linking party and its products and/or services; and (c) fits within the context of the linking party’s site.
+        <br>
+        <br>
+        We may consider and approve other link requests from the following types of organizations:
+        <br>
+        <br>
+        <ul>
+          <li>commonly-known consumer and/or business information sources;</li>
+          <li>dot.com community sites;</li>
+          <li>associations or other groups representing charities;</li>
+          <li>online directory distributors;</li>
+          <li>internet portals;</li>
+          <li>accounting, law and consulting firms; and</li>
+          <li>educational institutions and trade associations.</li>
+        </ul>
+        We will approve link requests from these organizations if we decide that: (a) the link would not make us look
+        unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative
+        records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of NetZ; and
+        (d) the link is in the context of general resource information.
+
+        <br>
+        <br>
+        These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not
+        falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c)
+        fits within the context of the linking party’s site.
+        <br>
+        <br>
+        If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website,
+        you must inform us by sending an e-mail to NetZ. Please include your name, your organization name, contact
+        information as well as the URL of your site, a list of any URLs from which you intend to link to our Website,
+        and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.
+        <br>
+        <br>
+        Approved organizations may hyperlink to our Website as follows:
+        <br>
+        <br>
+        <ul>
+          <li>By use of our corporate name; or</li>
+          <li>By use of the uniform resource locator being linked to; or</li>
+          <li>By use of any other description of our Website being linked to that makes sense within the context and
+            format of content on the linking party’s site.</li>
+        </ul>
+        No use of NetZ's logo or other artwork will be allowed for linking absent a trademark license agreement.
+        </ul>
+        <br>
+        <br>
+        <h6>iFrames</h6>
+        Without prior approval and written permission, you may not create frames around our Webpages that alter in any
+        way the visual presentation or appearance of our Website.
+        <br>
+        <br>
+        <h6>Content Liability</h6>
+        We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend
+        us against all claims that is rising on your Website. No link(s) should appear on any Website that may be
+        interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the
+        infringement or other violation of, any third party rights.
+        <br>
+        <br>
+        <h6>Reservation of Rights</h6>
+        We reserve the right to request that you remove all links or any particular link to our Website. You approve to
+        immediately remove all links to our Website upon request. We also reserve the right to amen these terms and
+        conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to
+        and follow these linking terms and conditions.
+        <br>
+        <br>
+        <h6>Removal of links from our website</h6>
+        If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any
+        moment. We will consider requests to remove links but we are not obligated to or so or to respond to you
+        directly.
+        <br>
+        <br>
+        We do not ensure that the information on this website is correct, we do not warrant its completeness or
+        accuracy; nor do we promise to ensure that the website remains available or that the material on the website is
+        kept up to date.
+        <br>
+        <br>
+        <h6>Disclaimer</h6>
+        To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions
+        relating to our website and the use of this website. Nothing in this disclaimer will:
+        <br>
+        <br>
+        <ul>
+          <li>limit or exclude our or your liability for death or personal injury;</li>
+          <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+          <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+          <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+        </ul>
+        The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are
+        subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including
+        liabilities arising in contract, in tort and for breach of statutory duty.
+        <br>
+        <br>
+        As long as the website and the information and services on the website are provided free of charge, we will not
+        be liable for any loss or damage of any nature.
+        </p>
+        <div id="login-link" class="text-right" data-toggle="modal" data-target="#modalRegForm">
+          <a href="#" class="text" style="color: darkgrey;" data-dismiss="modal">Tillbaka till registrering</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--EFTER REGISTRERING NY****-->
+
+
+  <!-- MYPAGES PAGES -->
+  <script id="view-mypages" type="text/html">
+    <div class="myPagesContainer">
+      <div class="myAccount"> 
+        <div class="profilepicture">
+         <img src="../creativecontent/Profilelogo_white.png" width="300" class="profilepicturemypages">
+        </div>
+        <br>
+        <h4>Välkommen</h4>
+       <div id="myAccountInfoDiv"> </div>
+      </div>
+
+      <div class="myAccountOrderHistory">
+        
+        <div class="errorMessageNoOrderHistory" id="noOrderHistory"> </div>
+        <div class ="orderHistory" id = "orderHistoryHeader" > </div>
+        <div class ="purchaseHistory" id = "orderHistory" > </div>
+        <div class ="cabonAmountAccount" id = "cabonAmountAccount" > </div>
+      </div>
+
+      
+    </div>
+  </script>
+
+
+  <div class="container-fluid" id="bigwindow">
+
+  </div>
+
+  <!--FOOTER-->
+  <footer class="footerClass" id="footer" class="text-center p-3" style="padding: 10px;">
+   <p style="margin:0px;">© NetZ 2022</p>
+        <div id="processDataDiv" class="text-center" data-toggle="modal" data-target="#modalProcessPersonalData">  
+       <a id="processData" style="color:white; cursor: pointer;">Hantering av persondata</a>
+        </div>
+       <p style="margin:0px;">
+       <a class="4" id="tellafriendLink" href="#" style="color:white">Tipsa en vän</a></p>
+       <p style="margin:0px;">
+       <a class="footerText" id="ContactUsLink" data-dismiss="modal" href="#" style="color:white">Kontakta oss</a></p>
+      
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="client.js"></script>
+  <script src="cartAndCheckout.js"></script>
+  <script src="adminTools.js"></script>
+  <script src="triggers.js"></script>
+  <script src="pageHandler.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content" style="width:130%">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+
+        </table>
+        <div>Summa: <span class="total-cart"></span>kr</div>
+      </div>
+      <div id="shoppingCartCheckout" class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--POP UP WHEN PRESSED ON LINK FOR PROCESSING PERSONAL DATA-->
+    <div class="modal fade" id="modalProcessPersonalData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content"><br>
+        <div class="text-center">
+          <h4 class="text-center">Integritetspolicy</h4>
+        </div>
+          <div class="modal-body mx-2">
+            <h5 class="text-center">Hur hanteras mina personuppgifter?</h5>
+          </div>
+      <div>
+        <h6 class="text-center">NetZ behandlar dina uppgifter i enlighet med <br>
+        "Allmänna dataskyddsförordningens" (GDPR) <br>
+        riktlinjer. NetZ samlar in identifierande information <br>
+      när du använder webbplatsen så som namn och emailadress.
+    Genom att lämna in dina person-<br>uppgifter samtycker du till lagring och behandling<br>
+      av dessa. NetZ kommer att vidta alla rimliga<br>
+     åtgärder som krävs för att säkerställa att dina <br>
+    uppgifter behandlas säkert. </h6>
+      </div>
+                     
+             <div class="modal-footer d-flex justify-content-center">
+            <button class="btnTemplateBlack"  data-dismiss="modal">OK</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+</html>
